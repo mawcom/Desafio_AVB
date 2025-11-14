@@ -7,21 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="script.js"></script>
   <h1 id = "bem_vindo">Bem vindo</h1>
   <div id = div_principal>  
-    <h3 id = faça_login>Faça o seu login</h3>
+    <h3 id = faça_login>Login</h3>
 
     <div class="gm">  
-      <label id = "label_gm" for="imput_gm">Gmail</label>
-      <input type="text", id = "imput_gm">
+      <label id = "label_gm" for="input_gm">Seu e-mail</label>
+      <input type="text", id = "input_gm">
     </div>
 
     <div class = "key">
-      <label id = "label_senha" for="imput_gm">senha</label>
+      <label id = "label_senha" for="input_gm">Sua Senha</label>
       <input type="password", id = "input_senha">
     </div>
 
-  <button id="butao">login</button>
+  <button id="butao" onclick="pegarSenha('#input_gm', '#input_senha')">login</button>
 </div>
 
 

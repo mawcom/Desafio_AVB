@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/mawcom/Desafio_AVB/issues"
   },
-  "homepage": "https://github.com/mawcom/Desafio_AVB#readme"
+  "homepage": "https://github.com/mawcom/Desafio_AVB#readme",
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
 }

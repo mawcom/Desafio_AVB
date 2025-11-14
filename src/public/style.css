@@ -1,3 +1,7 @@
+html {
+    background-color: rgb(231, 231, 231);
+}
+
 #bem_vindo {
     text-align: center;
     margin-top: 8-px;
@@ -6,44 +10,64 @@
 
 .gm {
     margin-top: 30px;
+    width: 100;
 }
 
-#imput_gm, #label_gm{
+#label_gm {
+    padding-bottom: 10px; 
+
+}
+#input_gm{
     display: block;
     margin: 2px auto;
     text-align: center;
     margin-top: 1px;
+    width: 250px;
+    height: 15px;
+    margin-top: 7px;
 }
 
 
 .key {
     margin-top: 30px;
 }
+#label_senha {
+    padding-bottom: 10px;
+}
 
-#input_senha, #label_senha{
+#input_senha{
     display: block;
     margin: 2px auto;
     text-align: center;
-     margin-bottom: 1px;
+    margin-top: 1px;
+    width: 250px;
+    height: 15px;
+    margin-top: 7px;
 }
 
 #faça_login {
     text-align: center;
-     margin-top: 0px;
+     margin-top: 0px;    
+     margin-bottom: 0px;  
+     font-size: 45px;
 
 }
 
 #div_principal{
-    background-color: cornflowerblue;
+    background-color: rgb(255, 255, 255);
     width: 250px;
     margin: 0 auto;
     padding: 35px;
-    border-radius: 50px;
+    border-radius: 10px;
 }   
 
 #butao {
     display: block;
     margin: 30px auto; 
-
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
 
 }
