@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste HTML</title>
+  <title>pagina de login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Olá, mundo!</h1>
-  <p>Esse é um HTML que realmente funciona :)</p>
-    <script src="index.js"></script>
+  <h1 id = "bem_vindo">Bem vindo</h1>
+  <div id = div_principal>  
+    <h3 id = faça_login>Faça o seu login</h3>
 
-  <button onclick="maior()">Clique aqui</button>
+    <div class="gm">  
+      <label id = "label_gm" for="imput_gm">Gmail</label>
+      <input type="text", id = "imput_gm">
+    </div>
+
+    <div class = "key">
+      <label id = "label_senha" for="imput_gm">senha</label>
+      <input type="password", id = "input_senha">
+    </div>
+
+  <button id="butao">login</button>
+</div>
+
+
+
 </body>
 </html>

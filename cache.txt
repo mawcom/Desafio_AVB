@@ -1,0 +1,52 @@
+// let nome = "batata"
+// console.log(nome);
+
+// let numero = 13
+// console.log("numero do mal " + numero);
+
+// let telefone;
+// console.log(telefone)
+
+// if (telefone == undefined) {
+//     console.log("indefinido")
+// } else {
+//     console.log("error")
+// }
+
+// let NumeroStr = "1234"
+// let NumeroStrNumero = Number(NumeroStr)
+
+// console.log(typeof NumeroStr)
+// console.log(typeof NumeroStrNumero)
+
+function maior(){
+    let list = [14,55,32,66,2,12,5];
+
+    for (let i = 0; i<list.length; i++ ){
+        console.log("oi")
+        if (list[i]<18){
+            console.log(list[i],"menor que 18")
+        } else if (list[i]>=18) {
+            console.log(list[i],"maior que 18")
+        } else {
+            console.log("porra")
+        }
+
+    }
+}
+
+console.log("isso ta correto?", 1 === "1") //isso compara os valores de forma real
+console.log("isso ta correto?", 1 == "1") //aqui traduz
+// aqui é pra fazer um if dentro de uma linha só
+console.log("isso ta certo?", 1 == "1" ? "correto" : "errado")
+console.log("isso ta certo?", 1 === "1" ? "correto" : "errado")
+
+let alter = document.querySelector('#body1')
+alter.style.backgroundColor = "grey"
+
+let alter_button = document.querySelector('#but')
+alter_button.style.backgroundColor = "purple"
+
+let elemento = document.createElement('texti')
+elemento.textContent = "TESTE DO BAGULHO"
+document.body.appendChild(elemento)

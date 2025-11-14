@@ -1,0 +1,21 @@
+{
+  "name": "desafio_avb",
+  "version": "1.0.0",
+  "description": "desafio passado pela equipe de recrutamento da AVB, para a realização de uma interface web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mawcom/Desafio_AVB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mawcom/Desafio_AVB/issues"
+  },
+  "homepage": "https://github.com/mawcom/Desafio_AVB#readme"
+}

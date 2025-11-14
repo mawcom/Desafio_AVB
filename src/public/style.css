@@ -1,0 +1,49 @@
+#bem_vindo {
+    text-align: center;
+    margin-top: 8-px;
+    font-size: 80px;
+}
+
+.gm {
+    margin-top: 30px;
+}
+
+#imput_gm, #label_gm{
+    display: block;
+    margin: 2px auto;
+    text-align: center;
+    margin-top: 1px;
+}
+
+
+.key {
+    margin-top: 30px;
+}
+
+#input_senha, #label_senha{
+    display: block;
+    margin: 2px auto;
+    text-align: center;
+     margin-bottom: 1px;
+}
+
+#faça_login {
+    text-align: center;
+     margin-top: 0px;
+
+}
+
+#div_principal{
+    background-color: cornflowerblue;
+    width: 250px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 50px;
+}   
+
+#butao {
+    display: block;
+    margin: 30px auto; 
+
+
+}
