@@ -1,0 +1,55 @@
+import userService from "../service/user.service.js";
+
+
+
+export default {
+    async register (req, res)  {
+    console.log(req.body)
+
+    try {
+        const email = req.body.emailInp_value;
+        const senha = req.body.senhaInp_value;
+        const nome = req.body.nomeInp_value;
+
+        const result = await userService.register({email, senha, nome})
+
+        return res.json({
+            message: "Usuário criado!",
+            user : result
+            }
+        )
+
+    } catch (err) {
+       return console.log(err)
+    }
+
+    return console.log("Recebi do front:", req.body);
+}, 
+
+
+async login (req, res){
+    try {
+        const email = req.body.emailInp_value;
+
+
+        const result_search = await userService.login({email});
+ 
+        if (result_search){
+            console.log("Gmail encontrado:", result_search.email);
+            return res.status(200).json({result_search})
+        } else {
+            console.log("Nenhum Gmail encontrado.");
+        }
+
+        
+    } catch (err) {
+       return console.log(err)
+    }
+
+    return console.log("Recebi do front:", req.body);
+
+
+
+}
+
+}

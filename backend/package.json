@@ -1,0 +1,40 @@
+{
+  "name": "desafio_avb",
+  "version": "1.0.0",
+  "description": "desafio passado pela equipe de recrutamento da AVB, para a realização de uma interface web",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "pg-cloudflare": "^1.2.7",
+    "pg-connection-string": "^2.9.1",
+    "pg-int8": "^1.0.1",
+    "pg-pool": "^3.10.1",
+    "pg-protocol": "^1.10.3",
+    "pg-types": "^2.2.0",
+    "pgpass": "^1.0.5",
+    "postgres-array": "^2.0.0",
+    "postgres-bytea": "^1.0.0",
+    "postgres-date": "^1.0.7",
+    "postgres-interval": "^1.2.0",
+    "split2": "^4.2.0",
+    "xtend": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mawcom/Desafio_AVB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mawcom/Desafio_AVB/issues"
+  },
+  "homepage": "https://github.com/mawcom/Desafio_AVB#readme"
+}
