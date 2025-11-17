@@ -4,9 +4,11 @@
   "description": "desafio passado pela equipe de recrutamento da AVB, para a realização de uma interface web",
   "main": "index.js",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "pg": "^8.16.3",
     "pg-cloudflare": "^1.2.7",
     "pg-connection-string": "^2.9.1",

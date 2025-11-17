@@ -13,11 +13,7 @@ export default {
 
         const result = await userService.register({email, senha, nome})
 
-        return res.json({
-            message: "Usuário criado!",
-            user : result
-            }
-        )
+        return res.json(result)
 
     } catch (err) {
        return console.log(err)
@@ -30,21 +26,27 @@ export default {
 async login (req, res){
     try {
         const email = req.body.emailInp_value;
+        const senha = req.body.senhaInp_value;
+
+        const result_search = await userService.login({email,senha});
 
 
-        const result_search = await userService.login({email});
- 
+        console.log("resultado da procura service",result_search)
+        console.log("valor do email vindo do input", email)
+
         if (result_search){
-            console.log("Gmail encontrado:", result_search.email);
-            return res.status(200).json({result_search})
+            return res.json(result_search)
+
         } else {
-            console.log("Nenhum Gmail encontrado.");
-        }
+            console.log("Nenhum Gmail encontrado ou senha incorreta.");
+            return res.json({
+                message : "NÃO ENCONTRADO"
+        })
 
         
-    } catch (err) {
-       return console.log(err)
-    }
+        }} catch (err) {
+            return console.log(err)
+        }
 
     return console.log("Recebi do front:", req.body);
 

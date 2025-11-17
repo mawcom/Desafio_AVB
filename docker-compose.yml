@@ -32,5 +32,3 @@ services:
   #     - ./src/public:/usr/share/nginx/html
   #   ports:
   #     - "3001:80"
-
-
