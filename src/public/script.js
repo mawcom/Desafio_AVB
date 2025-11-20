@@ -39,7 +39,7 @@ function pegarSenha(tag_email, tag_senha, tag_nome) {
                     sessionStorage.setItem('token', data.token);
                     console.log(sessionStorage.getItem('token'))
                     console.log(data);
-                    alert('Registro bem-sucedido! Token armazenado.');
+                    window.location.href = "end.html";
 
                     
                   } else {

@@ -8,7 +8,7 @@ const router = express.Router()
 router.post("/register", userController.register)
 router.post("/login", userController.login)
 router.get("/private", authMiddleware, async (req, res) => {
-    return res.send("<h1>alguma coisa</h1>")
+    return res.json( {message: "Acesso autorizado!", userId: req.userId})
 })
 
 

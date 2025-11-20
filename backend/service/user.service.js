@@ -16,7 +16,6 @@ export default {
             const { rows } = await pool.query(query, values)
             const user = rows[0];
             const token = generateToken({email: user.email, nome:user.nome, id: user.id})
-            console.log(token)
             return {user,token} 
 
         } catch (error) {
@@ -26,25 +25,28 @@ export default {
     },
     async login({ email, senha }) {
         try {
-            const query = `SELECT * FROM usarios WHERE email = $1 AND senha = $2`
-            const values = [email, senha];
+            
+            const query = `SELECT * FROM usarios WHERE email = $1`
+            const values = [email];
 
             console.log("query:::::::::", query, values)
 
             const { rows } = await pool.query(query, values)
             const user = rows[0];
+            console.log("RESPOSTA DA QUERRY", user)
 
-            console.log("email rebido no login::::::::::", email)
-            console.log("senha rebido no login::::::::::", senha)
-
+            const validade = await comparePassword(senha, user.senha)
 
             if (rows.length === 0) {
                 return false;
             }
+            if (validade){
+                const token = generateToken({email: user.email, nome:user.nome, id: user.id})
+                console.log(token)
+                return {user,token} 
 
-            const token = generateToken({email: user.email, nome:user.nome, id: user.id})
-            console.log(token)
-            return {user,token} 
+            }
+
 
         } catch (error) {
             console.log(error)

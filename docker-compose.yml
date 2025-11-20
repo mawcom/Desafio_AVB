@@ -25,10 +25,10 @@ services:
     ports:
       - 3000:3000
 
-  # front:
-  #   image: nginx:latest
-  #   container_name: front
-  #   volumes:
-  #     - ./src/public:/usr/share/nginx/html
-  #   ports:
-  #     - "3001:80"
+  front:
+    image: nginx:latest
+    container_name: front
+    volumes:
+      - ./src/public:/usr/share/nginx/html
+    ports:
+      - "3001:80"

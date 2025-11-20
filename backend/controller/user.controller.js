@@ -34,13 +34,14 @@ async login (req, res){
         console.log("resultado da procura service",result_search)
         console.log("valor do email vindo do input", email)
 
-        if (result_search){
+        if (result_search.user){
             return res.json(result_search)
+            console.log("senha valida")
 
         } else {
             console.log("Nenhum Gmail encontrado ou senha incorreta.");
             return res.json({
-                message : "NÃO ENCONTRADO"
+                message : "NÃO ENCONTRADO ou SENHA INCORRETA"
         })
 
         
