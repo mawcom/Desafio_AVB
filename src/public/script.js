@@ -50,7 +50,6 @@ function pegarSenha(tag_email, tag_senha, tag_nome) {
             }
 
 
-
         }
 
         enviar()
@@ -61,5 +60,3 @@ function pegarSenha(tag_email, tag_senha, tag_nome) {
     }
 
 }
-
-

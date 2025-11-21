@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
 html {
-    background-color: rgb(231, 231, 231);
-}
+    background-color: rgb(37, 26, 43);
 
 #bem_vindo {
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
     margin-top: 8-px;
     font-size: 80px;
@@ -14,65 +17,75 @@ html {
 }
 
 #label_gm {
-    padding-bottom: 10px; 
+    color: aliceblue;
+    padding-bottom: 10px;
 
 }
-#input_gm{
+
+#input_gm {
     display: block;
     margin: 2px auto;
     text-align: center;
     margin-top: 1px;
     width: 250px;
-    height: 15px;
+    height: 30px;
     margin-top: 7px;
+    border-radius: 10px;
 }
 
 
 .key {
     margin-top: 30px;
 }
+
 #label_senha {
+    color: aliceblue;
     padding-bottom: 10px;
 }
 
-#input_senha{
+#input_senha {
     display: block;
     margin: 2px auto;
     text-align: center;
     margin-top: 1px;
     width: 250px;
-    height: 15px;
+    height: 30px;
     margin-top: 7px;
+    border-radius: 10px;
 }
 
 #faça_login {
+    color: rgb(65, 255, 166);
+    font-family: 'Nunito', sans-serif;
     text-align: center;
-     margin-top: 0px;    
-     margin-bottom: 0px;  
-     font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 45px;
 
 }
 
-#div_principal{
-    background-color: rgb(255, 255, 255);
+#div_principal {
+    background-color: rgb(35, 18, 44);
     width: 250px;
     margin: 0 auto;
     padding: 35px;
     border-radius: 10px;
-}   
+}
 
 #butao {
+    font-size: 25px;
     display: block;
-    margin: 30px auto; 
-    width: 100px;
-    height: 30px;
+    background-color:rgb(65, 255, 166);;
+    margin: 30px auto;
+    width: 150px;
+    height: 40px;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
-    background-color: black;
+    color: rgb(35, 18, 44);;
 
 }
 
 #label_nome {
+    color: aliceblue;
     padding-bottom: 10px;
 }
 
@@ -82,8 +95,18 @@ html {
     text-align: center;
     margin-top: 1px;
     width: 250px;
-    height: 15px;
+    height: 30px;
     margin-top: 7px;
-
-
+    border-radius: 10px;
 }
+}
+
+#link_way{
+    color: rgb(65, 255, 166) ;
+}
+
+.nome {
+    margin-top: 30px;
+    width: 100;
+} 
+
