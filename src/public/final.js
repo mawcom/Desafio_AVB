@@ -1,5 +1,5 @@
 const token = sessionStorage.getItem("token")
-console.log("   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", token)
+console.log(token)
 
 if (!token) {
     alert("token não fornecido")

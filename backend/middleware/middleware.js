@@ -16,24 +16,34 @@ function authMiddleware(req, res, next) {
      return res.status(401).json({ message: "Formato do Token inválido. Esperado: 'Bearer <token>'" });
   }
 
-  try {
-    const decoded = tokenUtils.verifyToken(token);
-    req.userId = decoded.id; 
-    next();
-  } catch (err) {
+  if (token){
 
-    console.error("Erro na verificação do Token:", err.name, err.message);
+      try {
+      const decoded = tokenUtils.verifyToken(token);
+      req.userId = decoded.id; 
+      next();
+    } catch (err) {
 
-    let errorMessage = "Token inválido ou com erro de assinatura.";
-    let statusCode = 401;
+      console.error("Erro na verificação do Token:", err.name, err.message);
 
-    if (err.name === 'TokenExpiredError') {
-      errorMessage = "Sessão expirada. Faça login novamente.";
-      statusCode = 401; 
+      let errorMessage = "Token inválido ou com erro de assinatura.";
+      let statusCode = 401;
+
+      if (err.name === 'TokenExpiredError') {
+        errorMessage = "Sessão expirada. Faça login novamente.";
+        statusCode = 401; 
+      }
+      
+      return res.status(statusCode).json({ message: errorMessage });
     }
-    
-    return res.status(statusCode).json({ message: errorMessage });
-  }
-}
+  } else{
+    return res.status(401).json({ message: "Sem token fornecido" });
 
+  }
+
+
+    
+  }
+
+  
 export default authMiddleware;

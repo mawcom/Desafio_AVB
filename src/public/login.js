@@ -22,8 +22,6 @@ function pegarSenha(tag_email, tag_senha) {
                     const data = await envio.json();
                     console.log(data)
                     sessionStorage.setItem('token', data.token);
-                    console.log(sessionStorage.getItem('token'))
-                    console.log(data);
                     window.location.href = "end.html";
                     
                   } else {
